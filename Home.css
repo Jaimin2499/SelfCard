@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    background-image: url(https://img.freepik.com/free-vector/honeycomb-white-background_51543-116.jpg?size=626&ext=jpg);
+    height: 500px;
+    width: 30%;
+    overflow: hidden;
+    box-shadow: 4px 5px 26px -8px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 4px 5px 26px -8px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 4px 5px 26px -8px rgba(0, 0, 0, 0.88);
+    border-radius: 2px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -75%;
+    height: 100%;
+    width: 100%;
+    background: #000066;
+    transform: skewY(340deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    transform: skewY(390deg);
+}
+
+.card .image {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 30%;
+    border: white solid 5px;
+}
+
+.card .image img {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card .name {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 20px;
+}
+
+.card .name h2 {
+    color: #000066;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.card:hover .name h2 {
+    border-bottom: #000066 solid 2px;
+    transition: 0.2s;
+}
+
+.card .details {
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    margin-top: 280px;
+    margin-left: 20px;
+}
+
+.card .details h4 {
+    padding: 10px 30px;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 13px;
+    color: #000066;
+}
+
+.card .details h4 i {
+    position: absolute;
+    margin-left: -30px;
+}
+
+.card .footer {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    bottom: 10px;
+    background: #000066;
+    border-radius: 2px;
+}
+
+.card .footer i {
+    color: white;
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px 33px;
+}
+
+@media (max-width:426px) {
+    .card {
+        height: 500px;
+        width: 80%;
+    }
+    .card .footer i {
+        padding: 10px 29px;
+    }
+}
