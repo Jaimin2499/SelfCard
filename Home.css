@@ -192,6 +192,9 @@ body {
         height: 500px;
         width: 25%;
     }
+    .card .image {
+        margin-left: 35%;
+    }
     .card .footer i {
         padding: 4% 5.5%;
     }
