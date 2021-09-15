@@ -20,7 +20,7 @@ body {
     box-shadow: 4px 5px 26px -8px rgba(0, 0, 0, 0.88);
     -webkit-box-shadow: 4px 5px 26px -8px rgba(0, 0, 0, 0.88);
     -moz-box-shadow: 4px 5px 26px -8px rgba(0, 0, 0, 0.88);
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 .card::before {
@@ -29,13 +29,13 @@ body {
     top: -75%;
     height: 100%;
     width: 100%;
-    background: #000066;
+    background: #000033;
     transform: skewY(340deg);
     transition: 0.5s;
 }
 
 .card:hover::before {
-    transform: skewY(390deg);
+    transform: skewY(360deg);
 }
 
 .card .image {
@@ -45,7 +45,7 @@ body {
     border-radius: 50%;
     background-color: white;
     margin-top: 20px;
-    margin-left: 30%;
+    margin-left: 25%;
     border: white solid 5px;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .card:hover .name h2 {
-    border-bottom: #000066 solid 2px;
+    border-bottom: #000066 dotted 2px;
     transition: 0.2s;
 }
 
@@ -104,6 +104,7 @@ body {
     bottom: 10px;
     background: #000066;
     border-radius: 2px;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/797/548/47/strip-texture-dark-blue-wallpaper-preview.jpg);
 }
 
 .card .footer i {
@@ -113,13 +114,24 @@ body {
     padding: 10px 23px;
 }
 
+.card .footer:hover i {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+
+/* --------------------------Media Query----------------------------- */
+
 @media (max-width:321px) {
     .card {
         height: 500px;
         width: 80%;
     }
+    .card .image {
+        margin-left: 20%;
+    }
     .card .footer i {
-        padding: 5% 3%;
+        padding: 5% 4.8%;
     }
 }
 
@@ -128,8 +140,11 @@ body {
         height: 500px;
         width: 80%;
     }
+    .card .image {
+        margin-left: 25%;
+    }
     .card .footer i {
-        padding: 5% 4%;
+        padding: 5% 5.5%;
     }
 }
 
@@ -138,8 +153,11 @@ body {
         height: 500px;
         width: 80%;
     }
+    .card .image {
+        margin-left: 28%;
+    }
     .card .footer i {
-        padding: 4% 5%;
+        padding: 4% 6%;
     }
 }
 
@@ -148,8 +166,11 @@ body {
         height: 500px;
         width: 50%;
     }
+    .card .image {
+        margin-left: 30%;
+    }
     .card .footer i {
-        padding: 4% 5%;
+        padding: 4% 6.5%;
     }
 }
 
@@ -158,8 +179,11 @@ body {
         height: 500px;
         width: 35%;
     }
+    .card .image {
+        margin-left: 30%;
+    }
     .card .footer i {
-        padding: 4% 5.8%;
+        padding: 4% 6.3%;
     }
 }
 
