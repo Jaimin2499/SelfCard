@@ -60,6 +60,7 @@ body {
     position: absolute;
     margin-top: 230px;
     margin-left: 20px;
+    transition: 0.2s;
 }
 
 .card .name h2 {
@@ -112,12 +113,62 @@ body {
     padding: 10px 23px;
 }
 
-@media (max-width:426px) {
+@media (max-width:321px) {
     .card {
         height: 500px;
         width: 80%;
     }
     .card .footer i {
-        padding: 3.5% 4%;
+        padding: 5% 4.8%;
+    }
+}
+
+@media (min-width:321px) and (max-width:376px) {
+    .card {
+        height: 500px;
+        width: 80%;
+    }
+    .card .footer i {
+        padding: 5% 5.6%;
+    }
+}
+
+@media (min-width:376px) and (max-width:426px) {
+    .card {
+        height: 500px;
+        width: 80%;
+    }
+    .card .footer i {
+        padding: 4% 6.1%;
+    }
+}
+
+@media (min-width:426px) and (max-width:769px) {
+    .card {
+        height: 500px;
+        width: 50%;
+    }
+    .card .footer i {
+        padding: 4% 6.5%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1025px) {
+    .card {
+        height: 500px;
+        width: 35%;
+    }
+    .card .footer i {
+        padding: 4% 6.3%;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1441px) {
+    .card {
+        height: 500px;
+        width: 25%;
+    }
+    .card .footer i {
+        padding: 4% 5.7%;
     }
 }
